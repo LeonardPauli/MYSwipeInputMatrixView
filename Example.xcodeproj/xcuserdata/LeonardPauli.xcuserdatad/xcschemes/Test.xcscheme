@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0521A9C717A6E4FC00CDD2C5"
-               BuildableName = "Test.app"
-               BlueprintName = "Test"
-               ReferencedContainer = "container:Test.xcodeproj">
+               BuildableName = "Example.app"
+               BlueprintName = "Example"
+               ReferencedContainer = "container:Example.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0521A9C717A6E4FC00CDD2C5"
-            BuildableName = "Test.app"
-            BlueprintName = "Test"
-            ReferencedContainer = "container:Test.xcodeproj">
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -52,9 +52,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0521A9C717A6E4FC00CDD2C5"
-            BuildableName = "Test.app"
-            BlueprintName = "Test"
-            ReferencedContainer = "container:Test.xcodeproj">
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -70,9 +70,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0521A9C717A6E4FC00CDD2C5"
-            BuildableName = "Test.app"
-            BlueprintName = "Test"
-            ReferencedContainer = "container:Test.xcodeproj">
+            BuildableName = "Example.app"
+            BlueprintName = "Example"
+            ReferencedContainer = "container:Example.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

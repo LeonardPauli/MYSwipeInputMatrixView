@@ -17,19 +17,19 @@
 		0521A9E017A6E4FC00CDD2C5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0521A9DF17A6E4FC00CDD2C5 /* Default@2x.png */; };
 		0521A9E217A6E4FC00CDD2C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0521A9E117A6E4FC00CDD2C5 /* Default-568h@2x.png */; };
 		0521A9E517A6E4FC00CDD2C5 /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0521A9E417A6E4FC00CDD2C5 /* MYViewController.m */; };
-		0521A9F417A7180300CDD2C5 /* MYSwipeableBrick.m in Sources */ = {isa = PBXBuildFile; fileRef = 0521A9F317A7180300CDD2C5 /* MYSwipeableBrick.m */; };
-		0521A9F717A7191B00CDD2C5 /* MYSwipeableInputMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0521A9F617A7191B00CDD2C5 /* MYSwipeableInputMatrixView.m */; };
+		05AC295717A8243500CDF1E7 /* MYSwipeableBrick.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AC295417A8243500CDF1E7 /* MYSwipeableBrick.m */; };
+		05AC295817A8243500CDF1E7 /* MYSwipeableInputMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05AC295617A8243500CDF1E7 /* MYSwipeableInputMatrixView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0521A9C817A6E4FC00CDD2C5 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0521A9C817A6E4FC00CDD2C5 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0521A9CB17A6E4FC00CDD2C5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0521A9CD17A6E4FC00CDD2C5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0521A9CF17A6E4FC00CDD2C5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0521A9D317A6E4FC00CDD2C5 /* Test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Test-Info.plist"; sourceTree = "<group>"; };
+		0521A9D317A6E4FC00CDD2C5 /* Example-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Example-Info.plist"; sourceTree = "<group>"; };
 		0521A9D517A6E4FC00CDD2C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0521A9D717A6E4FC00CDD2C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0521A9D917A6E4FC00CDD2C5 /* Test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Test-Prefix.pch"; sourceTree = "<group>"; };
+		0521A9D917A6E4FC00CDD2C5 /* Example-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Example-Prefix.pch"; sourceTree = "<group>"; };
 		0521A9DA17A6E4FC00CDD2C5 /* MYAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYAppDelegate.h; sourceTree = "<group>"; };
 		0521A9DB17A6E4FC00CDD2C5 /* MYAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYAppDelegate.m; sourceTree = "<group>"; };
 		0521A9DD17A6E4FC00CDD2C5 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -37,10 +37,10 @@
 		0521A9E117A6E4FC00CDD2C5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0521A9E317A6E4FC00CDD2C5 /* MYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
 		0521A9E417A6E4FC00CDD2C5 /* MYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYViewController.m; sourceTree = "<group>"; };
-		0521A9F217A7180300CDD2C5 /* MYSwipeableBrick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSwipeableBrick.h; sourceTree = "<group>"; };
-		0521A9F317A7180300CDD2C5 /* MYSwipeableBrick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSwipeableBrick.m; sourceTree = "<group>"; };
-		0521A9F517A7191B00CDD2C5 /* MYSwipeableInputMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSwipeableInputMatrixView.h; sourceTree = "<group>"; };
-		0521A9F617A7191B00CDD2C5 /* MYSwipeableInputMatrixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSwipeableInputMatrixView.m; sourceTree = "<group>"; };
+		05AC295317A8243500CDF1E7 /* MYSwipeableBrick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSwipeableBrick.h; sourceTree = "<group>"; };
+		05AC295417A8243500CDF1E7 /* MYSwipeableBrick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSwipeableBrick.m; sourceTree = "<group>"; };
+		05AC295517A8243500CDF1E7 /* MYSwipeableInputMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSwipeableInputMatrixView.h; sourceTree = "<group>"; };
+		05AC295617A8243500CDF1E7 /* MYSwipeableInputMatrixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSwipeableInputMatrixView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		0521A9BF17A6E4FC00CDD2C5 = {
 			isa = PBXGroup;
 			children = (
-				0521A9D117A6E4FC00CDD2C5 /* Test */,
+				0521A9D117A6E4FC00CDD2C5 /* Example */,
 				0521A9CA17A6E4FC00CDD2C5 /* Frameworks */,
 				0521A9C917A6E4FC00CDD2C5 /* Products */,
 			);
@@ -69,7 +69,7 @@
 		0521A9C917A6E4FC00CDD2C5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0521A9C817A6E4FC00CDD2C5 /* Test.app */,
+				0521A9C817A6E4FC00CDD2C5 /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0521A9D117A6E4FC00CDD2C5 /* Test */ = {
+		0521A9D117A6E4FC00CDD2C5 /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				0521A9DA17A6E4FC00CDD2C5 /* MYAppDelegate.h */,
@@ -92,21 +92,19 @@
 				0521A9E317A6E4FC00CDD2C5 /* MYViewController.h */,
 				0521A9E417A6E4FC00CDD2C5 /* MYViewController.m */,
 				0521A9D217A6E4FC00CDD2C5 /* Supporting Files */,
-				0521A9F217A7180300CDD2C5 /* MYSwipeableBrick.h */,
-				0521A9F317A7180300CDD2C5 /* MYSwipeableBrick.m */,
-				0521A9F517A7191B00CDD2C5 /* MYSwipeableInputMatrixView.h */,
-				0521A9F617A7191B00CDD2C5 /* MYSwipeableInputMatrixView.m */,
+				05AC295217A8243500CDF1E7 /* MYSwipeableInputMatrixView */,
 			);
+			name = Example;
 			path = Test;
 			sourceTree = "<group>";
 		};
 		0521A9D217A6E4FC00CDD2C5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0521A9D317A6E4FC00CDD2C5 /* Test-Info.plist */,
+				0521A9D317A6E4FC00CDD2C5 /* Example-Info.plist */,
 				0521A9D417A6E4FC00CDD2C5 /* InfoPlist.strings */,
 				0521A9D717A6E4FC00CDD2C5 /* main.m */,
-				0521A9D917A6E4FC00CDD2C5 /* Test-Prefix.pch */,
+				0521A9D917A6E4FC00CDD2C5 /* Example-Prefix.pch */,
 				0521A9DD17A6E4FC00CDD2C5 /* Default.png */,
 				0521A9DF17A6E4FC00CDD2C5 /* Default@2x.png */,
 				0521A9E117A6E4FC00CDD2C5 /* Default-568h@2x.png */,
@@ -114,12 +112,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		05AC295217A8243500CDF1E7 /* MYSwipeableInputMatrixView */ = {
+			isa = PBXGroup;
+			children = (
+				05AC295317A8243500CDF1E7 /* MYSwipeableBrick.h */,
+				05AC295417A8243500CDF1E7 /* MYSwipeableBrick.m */,
+				05AC295517A8243500CDF1E7 /* MYSwipeableInputMatrixView.h */,
+				05AC295617A8243500CDF1E7 /* MYSwipeableInputMatrixView.m */,
+			);
+			path = MYSwipeableInputMatrixView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0521A9C717A6E4FC00CDD2C5 /* Test */ = {
+		0521A9C717A6E4FC00CDD2C5 /* Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0521A9EB17A6E4FC00CDD2C5 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildConfigurationList = 0521A9EB17A6E4FC00CDD2C5 /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
 				0521A9C417A6E4FC00CDD2C5 /* Sources */,
 				0521A9C517A6E4FC00CDD2C5 /* Frameworks */,
@@ -129,9 +138,9 @@
 			);
 			dependencies = (
 			);
-			name = Test;
+			name = Example;
 			productName = Test;
-			productReference = 0521A9C817A6E4FC00CDD2C5 /* Test.app */;
+			productReference = 0521A9C817A6E4FC00CDD2C5 /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -144,7 +153,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Leonard Pauli";
 			};
-			buildConfigurationList = 0521A9C317A6E4FC00CDD2C5 /* Build configuration list for PBXProject "Test" */;
+			buildConfigurationList = 0521A9C317A6E4FC00CDD2C5 /* Build configuration list for PBXProject "Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -156,7 +165,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0521A9C717A6E4FC00CDD2C5 /* Test */,
+				0521A9C717A6E4FC00CDD2C5 /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -183,8 +192,8 @@
 				0521A9D817A6E4FC00CDD2C5 /* main.m in Sources */,
 				0521A9DC17A6E4FC00CDD2C5 /* MYAppDelegate.m in Sources */,
 				0521A9E517A6E4FC00CDD2C5 /* MYViewController.m in Sources */,
-				0521A9F417A7180300CDD2C5 /* MYSwipeableBrick.m in Sources */,
-				0521A9F717A7191B00CDD2C5 /* MYSwipeableInputMatrixView.m in Sources */,
+				05AC295717A8243500CDF1E7 /* MYSwipeableBrick.m in Sources */,
+				05AC295817A8243500CDF1E7 /* MYSwipeableInputMatrixView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +271,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
-				INFOPLIST_FILE = "Test/Test-Info.plist";
+				GCC_PREFIX_HEADER = "Test/Example-Prefix.pch";
+				INFOPLIST_FILE = "Test/Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Example;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -274,10 +283,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Test/Test-Prefix.pch";
-				INFOPLIST_FILE = "Test/Test-Info.plist";
+				GCC_PREFIX_HEADER = "Test/Example-Prefix.pch";
+				INFOPLIST_FILE = "Test/Example-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Example;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -285,7 +294,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0521A9C317A6E4FC00CDD2C5 /* Build configuration list for PBXProject "Test" */ = {
+		0521A9C317A6E4FC00CDD2C5 /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0521A9E917A6E4FC00CDD2C5 /* Debug */,
@@ -294,7 +303,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0521A9EB17A6E4FC00CDD2C5 /* Build configuration list for PBXNativeTarget "Test" */ = {
+		0521A9EB17A6E4FC00CDD2C5 /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0521A9EC17A6E4FC00CDD2C5 /* Debug */,

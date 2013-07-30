@@ -10,6 +10,9 @@
 #import "MYSwipeableInputMatrixView.h"
 #import "MYSwipeableBrick.h"
 
+#define ARC4RANDOM_MAX      0x100000000
+
+
 @interface MYViewController ()
 
 @end
@@ -21,26 +24,26 @@ MYSwipeableInputMatrixView *imvw;
 
 
 CGFloat rndm(CGFloat max, CGFloat min) {
-	CGFloat r = 1.0*rand()/RAND_MAX;
+	CGFloat r = ((double)arc4random() / ARC4RANDOM_MAX);
 	return r*(max-min)+min;
 }
 CGFloat rnd(CGFloat max) {
-	CGFloat r = 1.0*rand()/RAND_MAX;
+	CGFloat r = ((double)arc4random() / ARC4RANDOM_MAX);
 	return r*max;
 }
 int rndim(int max, int min) {
-	CGFloat r = 1.0*rand()/RAND_MAX;
+	CGFloat r = ((double)arc4random() / ARC4RANDOM_MAX);
 	return r*(max-min)+min;
 }
 int rndi(int max) {
-	CGFloat r = 1.0*rand()/RAND_MAX;
+	CGFloat r = ((double)arc4random() / ARC4RANDOM_MAX);
 	return r*max;
 }
 
 
 
 - (void)newQuestion {
-
+	
 	question.text = @(rndi(100)).stringValue;
 	
 	for (int i=0; i<imvw.rows*imvw.cols; i++) {
@@ -69,8 +72,10 @@ int rndi(int max) {
 	self.view.backgroundColor = [UIColor colorWithHue:0.54 saturation:0.8 brightness:1 alpha:1];
 	self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 	
-	CGFloat width = 320;
-	CGFloat height = 460;
+	// For iPhone 4 and 5 portrait
+	CGSize size = [[UIScreen mainScreen] bounds].size;
+	CGFloat width = MIN(size.width, size.height);
+	CGFloat height = MAX(size.width, size.height)-20;
 	CGFloat imvwH = 200;
 	
 	question = [[UILabel alloc] initWithFrame:CGRectMake(0, (height-imvwH)/2-30, width, 50)];
