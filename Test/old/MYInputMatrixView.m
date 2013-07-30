@@ -20,7 +20,7 @@ UIColor *higlightColor;
 UIColor *buttonColor;
 UIColor *textColor;
 NSArray *titles;
-NSMutableArray *buttonsInfo;
+NSMutableDictionary *buttonsInfo;
 UIFont *font;
 CGSize brickSize;
 
@@ -28,13 +28,14 @@ CGSize brickSize;
 	[super setFrame:frame];
 	width = frame.size.width;
 	height = frame.size.height;
-	brickSize = CGSizeMake((width+borderWidth)/cols-borderWidth, (height+borderWidth)/cols-borderWidth);
+	brickSize = CGSizeMake((width+borderWidth)/cols, (height+borderWidth)/cols);
 }
 
-- (id)initWithFrame:(CGRect)frame rows:(NSInteger)nrRows cols:(NSInteger)nrCols borderWidth:(CGFloat)bW buttonColor:(UIColor*)col higlightColor:(UIColor*)hCol textColor:(UIColor*)tCol titles:(NSArray*)tits font:(UIFont*)f {
+- (id)initWithFrame:(CGRect)frame rows:(NSInteger)nrRows cols:(NSInteger)nrCols borderWidth:(CGFloat)bW buttonColor:(UIColor*)col higlightColor:(UIColor*)hCol textColor:(UIColor*)tCol titles:(NSArray*)tits font:(UIFont*)font {
     self = [super init];
     if (self) {
 		self.multipleTouchEnabled = NO;
+		self.backgroundColor = [UIColor whiteColor];
 		
 		rows = nrRows;
 		cols = nrCols;
@@ -42,14 +43,10 @@ CGSize brickSize;
 		buttonColor = col;
 		higlightColor = hCol;
 		textColor = tCol;
-		titles = tits;
-		if (titles==nil)
-			titles = @[];
-		buttonsInfo = [[NSMutableArray alloc] initWithCapacity:rows*cols];
-		font = f;
 		if (font==nil)
 			font = [UIFont systemFontOfSize:25];
-		self.backgroundColor = [UIColor whiteColor];
+		
+		buttonsInfo = [[NSMutableDictionary alloc] initWithCapacity:rows*cols];
 		
 		for (int i=0; i<rows; i++)
 			for (int j=0; j<cols; j++) {
@@ -60,7 +57,6 @@ CGSize brickSize;
 			}
 		
 		[self setFrame:frame];
-		
     }
     return self;
 }

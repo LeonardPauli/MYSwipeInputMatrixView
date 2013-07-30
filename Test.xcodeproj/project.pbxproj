@@ -17,8 +17,8 @@
 		0521A9E017A6E4FC00CDD2C5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0521A9DF17A6E4FC00CDD2C5 /* Default@2x.png */; };
 		0521A9E217A6E4FC00CDD2C5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0521A9E117A6E4FC00CDD2C5 /* Default-568h@2x.png */; };
 		0521A9E517A6E4FC00CDD2C5 /* MYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0521A9E417A6E4FC00CDD2C5 /* MYViewController.m */; };
-		0521A9E817A6E4FC00CDD2C5 /* MYViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0521A9E617A6E4FC00CDD2C5 /* MYViewController.xib */; };
-		0521A9F017A6E7F300CDD2C5 /* MYInputMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0521A9EF17A6E7F300CDD2C5 /* MYInputMatrixView.m */; };
+		0521A9F417A7180300CDD2C5 /* MYSwipeableBrick.m in Sources */ = {isa = PBXBuildFile; fileRef = 0521A9F317A7180300CDD2C5 /* MYSwipeableBrick.m */; };
+		0521A9F717A7191B00CDD2C5 /* MYSwipeableInputMatrixView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0521A9F617A7191B00CDD2C5 /* MYSwipeableInputMatrixView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +37,10 @@
 		0521A9E117A6E4FC00CDD2C5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		0521A9E317A6E4FC00CDD2C5 /* MYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYViewController.h; sourceTree = "<group>"; };
 		0521A9E417A6E4FC00CDD2C5 /* MYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MYViewController.m; sourceTree = "<group>"; };
-		0521A9E717A6E4FC00CDD2C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MYViewController.xib; sourceTree = "<group>"; };
-		0521A9EF17A6E7F300CDD2C5 /* MYInputMatrixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYInputMatrixView.m; sourceTree = "<group>"; };
-		0521A9F117A6EAE900CDD2C5 /* MYInputMatrixView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MYInputMatrixView.h; sourceTree = "<group>"; };
+		0521A9F217A7180300CDD2C5 /* MYSwipeableBrick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSwipeableBrick.h; sourceTree = "<group>"; };
+		0521A9F317A7180300CDD2C5 /* MYSwipeableBrick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSwipeableBrick.m; sourceTree = "<group>"; };
+		0521A9F517A7191B00CDD2C5 /* MYSwipeableInputMatrixView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MYSwipeableInputMatrixView.h; sourceTree = "<group>"; };
+		0521A9F617A7191B00CDD2C5 /* MYSwipeableInputMatrixView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MYSwipeableInputMatrixView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +91,11 @@
 				0521A9DB17A6E4FC00CDD2C5 /* MYAppDelegate.m */,
 				0521A9E317A6E4FC00CDD2C5 /* MYViewController.h */,
 				0521A9E417A6E4FC00CDD2C5 /* MYViewController.m */,
-				0521A9E617A6E4FC00CDD2C5 /* MYViewController.xib */,
 				0521A9D217A6E4FC00CDD2C5 /* Supporting Files */,
-				0521A9F117A6EAE900CDD2C5 /* MYInputMatrixView.h */,
-				0521A9EF17A6E7F300CDD2C5 /* MYInputMatrixView.m */,
+				0521A9F217A7180300CDD2C5 /* MYSwipeableBrick.h */,
+				0521A9F317A7180300CDD2C5 /* MYSwipeableBrick.m */,
+				0521A9F517A7191B00CDD2C5 /* MYSwipeableInputMatrixView.h */,
+				0521A9F617A7191B00CDD2C5 /* MYSwipeableInputMatrixView.m */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -168,7 +170,6 @@
 				0521A9DE17A6E4FC00CDD2C5 /* Default.png in Resources */,
 				0521A9E017A6E4FC00CDD2C5 /* Default@2x.png in Resources */,
 				0521A9E217A6E4FC00CDD2C5 /* Default-568h@2x.png in Resources */,
-				0521A9E817A6E4FC00CDD2C5 /* MYViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,7 +183,8 @@
 				0521A9D817A6E4FC00CDD2C5 /* main.m in Sources */,
 				0521A9DC17A6E4FC00CDD2C5 /* MYAppDelegate.m in Sources */,
 				0521A9E517A6E4FC00CDD2C5 /* MYViewController.m in Sources */,
-				0521A9F017A6E7F300CDD2C5 /* MYInputMatrixView.m in Sources */,
+				0521A9F417A7180300CDD2C5 /* MYSwipeableBrick.m in Sources */,
+				0521A9F717A7191B00CDD2C5 /* MYSwipeableInputMatrixView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,14 +197,6 @@
 				0521A9D517A6E4FC00CDD2C5 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		0521A9E617A6E4FC00CDD2C5 /* MYViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0521A9E717A6E4FC00CDD2C5 /* en */,
-			);
-			name = MYViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -307,6 +301,7 @@
 				0521A9ED17A6E4FC00CDD2C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
