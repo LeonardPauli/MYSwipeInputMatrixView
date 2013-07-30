@@ -9,8 +9,11 @@ This is a example of how to make these swipe-on-a-matrix games. The simplest way
 - Open Xcode, create new project (iOS: Single View Application).
 - Select MYViewController.xib and delete it (Move to trash)
 - In MYAppDelegate.m, change
+
 		self.viewController = [[MYViewController alloc] initWithNibName:@"MYViewController" bundle:nil];
+
 	to
+
 		self.viewController = [[MYViewController alloc] init];
 
 - Download this repo as zip, drag the folder MYSwipeableInputMatrixView into the project (sidebar)
@@ -27,9 +30,11 @@ MYViewController.m:
 		#import "MYSwipeableBrick.h"
 
 - Before viewDidLoad:
+
 		MYSwipeableInputMatrixView *imvw;
 
 - Inside viewDidLoad:
+
 		self.view = [[UIView alloc] init];
 		self.view.backgroundColor = [UIColor whiteColor];
 		self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
@@ -41,6 +46,7 @@ MYViewController.m:
 		CGFloat imvwH = 200;
 
 - And now, initiate the matrix! (Still in viewDidLoad)
+
 		imvw = [[MYSwipeableInputMatrixView alloc] initWithRows:4 cols:4];
 		imvw.borderWidth = 3;
 		imvw.touchBorderWidth = 7; // So you can make diagonal swipes
@@ -66,6 +72,7 @@ MYViewController.m:
 		[imvw updateTitles];
 
 - Simple and buggy code for making swipes work! (Please improve it for your needs..)
+
 		[imvw setBrickSwipeEventBlock:^(MYSwipeEventStatus status, MYSwipeableInputMatrixView *mvw, CGPoint loc, NSInteger index, NSInteger lastIndex) {
 			if (status==MYSwipeEventStatusBegan) {
 				mvw.selectedBricks = [[NSMutableArray alloc] initWithCapacity:mvw.rows*mvw.cols];
