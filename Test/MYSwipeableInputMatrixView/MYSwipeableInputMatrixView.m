@@ -46,7 +46,11 @@
 		dy>brickSize.height-touchBorderWidth)
 		return -1;
 	
-	return iy*cols+ix;
+	NSInteger index = iy*cols+ix;
+	if (index>=rows*cols)
+		return -1;
+	
+	return index;
 }
 
 
