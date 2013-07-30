@@ -22,6 +22,7 @@ This is a example of how to make these swipe-on-a-matrix games. The simplest way
 MYViewController.m:
 
 - At top:
+
 		#import "MYSwipeableInputMatrixView.h"
 		#import "MYSwipeableBrick.h"
 
