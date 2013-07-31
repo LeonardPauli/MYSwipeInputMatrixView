@@ -62,9 +62,17 @@ int rndi(int max) {
 	
 	[imvw updateTitles];
 	
+	// Give the user a hint of the start brick by changing its color
+	//MYSwipeableBrick *brick = [imvw.bricks objectAtIndex:0];
+	//brick.text = @"#";
+	//brick.color = [UIColor whiteColor];
+	//brick.highlightColor = [UIColor whiteColor];
+	
 }
 
 
+BOOL swipeLimitReached;
+//BOOL badStart;
 - (void)viewDidLoad {
     [super viewDidLoad];
 	
@@ -72,7 +80,7 @@ int rndi(int max) {
 	self.view.backgroundColor = [UIColor colorWithHue:0.54 saturation:0.8 brightness:1 alpha:1];
 	self.view.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 	
-	// For iPhone 4 and 5 portrait
+	// For iPhone 4 and	5 portrait
 	CGSize size = [[UIScreen mainScreen] bounds].size;
 	CGFloat width = MIN(size.width, size.height);
 	CGFloat height = MAX(size.width, size.height)-20;
@@ -97,10 +105,40 @@ int rndi(int max) {
 		
 		if (status==MYSwipeEventStatusBegan) {
 			mvw.selectedBricks = [[NSMutableArray alloc] initWithCapacity:mvw.rows*mvw.cols];
+			
+			// Only allow user to start select a brick with index 0
+			//badStart = (index!=0);
 		}
+		
+		//if (badStart) return;
 		
 		if (status==MYSwipeEventStatusBegan || status==MYSwipeEventStatusChanged) {
 			if (index==-1) return;
+			
+			// Enable undo
+			NSInteger prevlastidx = -1;
+			if (1<mvw.selectedBricks.count)
+				prevlastidx = [[mvw.selectedBricks objectAtIndex:mvw.selectedBricks.count-2] integerValue];
+			
+			if (index==prevlastidx) {
+				NSInteger reallastidx = [mvw.selectedBricks.lastObject integerValue];
+				MYSwipeableBrick *lastBrick = [mvw.bricks objectAtIndex:reallastidx];
+				[mvw.selectedBricks removeLastObject];
+				lastBrick.highlighted = NO;
+				swipeLimitReached = NO;
+				return;
+			}
+			
+			// Limit to 4 bricks
+			if (mvw.selectedBricks.count==4) {
+				swipeLimitReached = YES;
+				return;
+			}
+			
+			// Prevent select selected bricks
+			if ([mvw.selectedBricks indexOfObject:@(index)]!=NSNotFound)
+				return;
+			
 			
 			MYSwipeableBrick *brick = [mvw.bricks objectAtIndex:index];
 			brick.highlighted = YES;
