@@ -19,7 +19,7 @@ This is a example of how to make these swipe-on-a-matrix games. The simplest way
 - Download this repo as zip, drag the folder MYSwipeableInputMatrixView into the project (sidebar)
 - Check "Copy items.." and "Create Groups..", hit return.
 - Click your project name in the sidebar
-- Make sure that portrait only is selected
+- Make sure that portrait only is selected for now
 
 
 MYViewController.m:
@@ -111,6 +111,6 @@ MYViewController.m:
 
 ##More
 
-The project is licenced under the MIT Licence included in this repo. If you plan to make an app of it, i would be glad if you told me about it. The code isn't perfect at all, but could give some insperation. Actually, in the beginning, it was my answer to the StackOverflow question http://stackoverflow.com/questions/17927534/detecting-touchdown-touchup-touchmove-events-across-4x4-ios-tiles, but later it evolved into this project.
+The project is licenced under the MIT Licence included in this repo. If you plan to make an app of it, i would be glad if you told me about it! The code isn't perfect at all, but could give some insperation. Actually, in the beginning, it was my answer to the StackOverflow question http://stackoverflow.com/questions/17927534/detecting-touchdown-touchup-touchmove-events-across-4x4-ios-tiles, but later it evolved into this project.
 
 Made by Leonard Pauli, 30 july 2013.
